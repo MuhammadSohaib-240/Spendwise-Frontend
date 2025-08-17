@@ -1,5 +1,5 @@
 <app-auth-layout [title]="'Welcome Back'" [subtitle]="'Login to your Spendwise account'">
-  <form class="auth-form">
+  <form class="auth-form" (ngSubmit)="onLogin()">
     <app-text-field
       placeholder="Email"
       [(value)]="email"
@@ -15,14 +15,13 @@
     <app-custom-button
       [loading]="loading"
       [disabled]="loading"
-      type="submit"
-      (click)="onLogin()">
+      type="submit">
       Login
     </app-custom-button>
 
     <p class="signup-text">
-    Don't have an account? 
-    <a [routerLink]="['/register']">Register here</a>
-  </p>
+      Don't have an account? 
+      <a [routerLink]="['/register']">Register here</a>
+    </p>
   </form>
 </app-auth-layout>

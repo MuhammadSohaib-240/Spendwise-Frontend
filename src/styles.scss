@@ -43,6 +43,7 @@
 }
 
 :root {
+  /* Core Theme Colors */
   --primary-color: #2E7D32;
   --secondary-color: #43A047;
   --accent-color: #FFB300;
@@ -50,9 +51,15 @@
   --text-color: #212121;
   --text-light: #BDBDBD;
 
+  /* Toast Semantic Colors */
+  --success-color: #2E7D32;   /* or --primary-color */
+  --info-color: #0288D1;      /* a nice calm blue */
+  --warning-color: #FFB300;   /* matches your accent */
+  --error-color: #D32F2F;
+
+  /* Fonts & Radius */
   --font-body: 'Inter', sans-serif;
   --font-heading: 'Poppins', sans-serif;
-
   --btn-radius: 6px;
 }
 
