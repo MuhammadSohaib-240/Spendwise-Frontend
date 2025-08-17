@@ -1,0 +1,35 @@
+<app-auth-layout [title]="'Create Account'" [subtitle]="'Register for Spendwise'">
+  <form class="auth-form">
+    <app-text-field
+      placeholder="Full Name"
+      [(value)]="name"
+      type="text">
+    </app-text-field>
+
+    <app-text-field
+      placeholder="Email"
+      [(value)]="email"
+      type="email">
+    </app-text-field>
+
+    <app-text-field
+      placeholder="Password"
+      [(value)]="password"
+      type="password">
+    </app-text-field>
+
+    <app-text-field
+      placeholder="Confirm Password"
+      [(value)]="confirmPassword"
+      type="password">
+    </app-text-field>
+
+    <app-custom-button
+      [loading]="loading"
+      [disabled]="loading"
+      type="submit"
+      (click)="onRegister()">
+      Register
+    </app-custom-button>
+  </form>
+</app-auth-layout>

@@ -1,0 +1,27 @@
+/* login.scss */
+
+/* Style the form inside the auth layout */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem; /* space between text fields and button */
+  padding: 0 0.5rem; // <-- add horizontal padding
+
+  .signup-text {
+    text-align: center;
+    margin-top: 1rem;
+
+    a {
+      color: var(--primary-color); /* use global theme */
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        color: var(--secondary-color); /* consistent hover */
+        text-decoration: underline;
+      }
+    }
+  }
+}
+

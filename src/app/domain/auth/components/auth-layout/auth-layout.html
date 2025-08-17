@@ -1,0 +1,17 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <div class="logo-wrapper">
+      <img [src]="logoPath" alt="Spendwise Logo" />
+    </div>
+
+    @if (title) {
+      <h1>{{ title }}</h1>
+    }
+
+    @if (subtitle) {
+      <p>{{ subtitle }}</p>
+    }
+
+    <ng-content></ng-content>
+  </div>
+</div>

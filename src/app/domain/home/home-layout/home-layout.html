@@ -1,0 +1,20 @@
+<div class="home-layout">
+  <aside class="sidebar">
+    <div class="logo">Spendwise</div>
+    <nav>
+      <ul>
+        @for (item of navItems; track $index) {
+            <a [routerLink]="[item.path]" 
+             [class.active]="activePage() === item.label"
+             (click)="activePage.set(item.label)">
+            {{ item.label }}
+          </a>
+        }
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

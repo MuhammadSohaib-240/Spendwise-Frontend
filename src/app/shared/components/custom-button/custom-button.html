@@ -1,0 +1,7 @@
+<button [disabled]="disabled || loading" [type]="type" class="custom-btn">
+    @if (loading) {
+        <span class="spinner"></span>
+    } @else {
+        <ng-content></ng-content>
+    }
+</button>

@@ -1,0 +1,28 @@
+<app-auth-layout [title]="'Welcome Back'" [subtitle]="'Login to your Spendwise account'">
+  <form class="auth-form">
+    <app-text-field
+      placeholder="Email"
+      [(value)]="email"
+      type="email">
+    </app-text-field>
+
+    <app-text-field
+      placeholder="Password"
+      [(value)]="password"
+      type="password">
+    </app-text-field>
+
+    <app-custom-button
+      [loading]="loading"
+      [disabled]="loading"
+      type="submit"
+      (click)="onLogin()">
+      Login
+    </app-custom-button>
+
+    <p class="signup-text">
+    Don't have an account? 
+    <a [routerLink]="['/register']">Register here</a>
+  </p>
+  </form>
+</app-auth-layout>
