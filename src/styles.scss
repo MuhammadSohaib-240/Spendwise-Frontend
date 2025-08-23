@@ -1,3 +1,5 @@
+@use 'tailwindcss';
+
 /* Inter Fonts */
 @font-face {
   font-family: 'Inter';
@@ -42,20 +44,24 @@
   font-style: italic;
 }
 
+// -----------------------------
+// Custom CSS Variables
+// -----------------------------
 :root {
   /* Core Theme Colors */
-  --primary-color: #2E7D32;
-  --secondary-color: #43A047;
-  --accent-color: #FFB300;
-  --background-color: #F1F8E9;
+  --primary-color: #2e7d32;
+  --secondary-color: #43a047;
+  --accent-color: #ffb300;
+  --background-color: #f1f8e9;
+  --surface: #ffffff;
   --text-color: #212121;
-  --text-light: #BDBDBD;
+  --text-light: #bdbdbd;
 
   /* Toast Semantic Colors */
-  --success-color: #2E7D32;   /* or --primary-color */
-  --info-color: #0288D1;      /* a nice calm blue */
-  --warning-color: #FFB300;   /* matches your accent */
-  --error-color: #D32F2F;
+  --success-color: #2e7d32;
+  --info-color: #0288d1;
+  --warning-color: #ffb300;
+  --error-color: #d32f2f;
 
   /* Fonts & Radius */
   --font-body: 'Inter', sans-serif;
@@ -63,21 +69,11 @@
   --btn-radius: 6px;
 }
 
-/* Global usage */
+html,
 body {
-  font-family: var(--font-body);
-  background-color: var(--background-color);
-  color: var(--text-color);
+  height: 100%;
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: var(--font-heading);
-  color: var(--primary-color);
-}
-button {
-  border-radius: var(--btn-radius);
-  background-color: var(--primary-color);
-  color: white;
-}
-button:hover {
-  background-color: var(--secondary-color);
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
 }

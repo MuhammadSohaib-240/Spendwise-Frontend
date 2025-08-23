@@ -9,6 +9,7 @@ import { RouterOutlet, RouterLink } from '@angular/router';
   styleUrls: ['./home-layout.scss'],
 })
 export class HomeLayout {
+  logoPath: string = '/assets/images/logo.png';
   // Example: track which page is active
   protected readonly activePage = signal('dashboard');
 

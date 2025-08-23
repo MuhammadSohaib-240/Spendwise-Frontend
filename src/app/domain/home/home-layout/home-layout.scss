@@ -4,20 +4,25 @@
 
   .sidebar {
     width: 220px;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     color: white;
     display: flex;
     flex-direction: column;
     padding: 1rem;
 
-    .logo {
-      font-family: var(--font-heading);
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
+    .logo-wrapper {
+    margin-bottom: 1.5rem;
+
+    img {
+      height: 60px;
+      object-fit: contain;
     }
+  }
 
     nav ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
       list-style: none;
       padding: 0;
 
