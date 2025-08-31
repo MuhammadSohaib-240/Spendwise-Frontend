@@ -1,4 +1,7 @@
-@use 'tailwindcss';
+@use 'styles/variables' as *;   // 👈 must be at the very top
+/* -----------------------------
+   Global Styles & Fonts
+------------------------------ */
 
 /* Inter Fonts */
 @font-face {
@@ -44,35 +47,14 @@
   font-style: italic;
 }
 
-// -----------------------------
-// Custom CSS Variables
-// -----------------------------
-:root {
-  /* Core Theme Colors */
-  --primary-color: #2e7d32;
-  --secondary-color: #43a047;
-  --accent-color: #ffb300;
-  --background-color: #f1f8e9;
-  --surface: #ffffff;
-  --text-color: #212121;
-  --text-light: #bdbdbd;
-
-  /* Toast Semantic Colors */
-  --success-color: #2e7d32;
-  --info-color: #0288d1;
-  --warning-color: #ffb300;
-  --error-color: #d32f2f;
-
-  /* Fonts & Radius */
-  --font-body: 'Inter', sans-serif;
-  --font-heading: 'Poppins', sans-serif;
-  --btn-radius: 6px;
-}
-
+/* -----------------------------
+   Global Base Styles
+------------------------------ */
 html,
 body {
   height: 100%;
 }
+
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;

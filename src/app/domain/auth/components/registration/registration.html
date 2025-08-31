@@ -1,8 +1,14 @@
 <app-auth-layout [title]="'Create Account'" [subtitle]="'Register for Spendwise'">
-  <form class="auth-form">
+  <form class="auth-form" (ngSubmit)="onRegister()">
     <app-text-field
       placeholder="Full Name"
       [(value)]="name"
+      type="text">
+    </app-text-field>
+
+    <app-text-field
+      placeholder="Username"
+      [(value)]="username"
       type="text">
     </app-text-field>
 
@@ -27,8 +33,7 @@
     <app-custom-button
       [loading]="loading"
       [disabled]="loading"
-      type="submit"
-      (click)="onRegister()">
+      type="submit">
       Register
     </app-custom-button>
   </form>

@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .auth-container {
   display: flex;
   justify-content: center;
@@ -17,6 +19,10 @@
   text-align: center;
 
   .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 1.5rem;
 
     img {
@@ -35,7 +41,7 @@
   p {
     font-family: var(--font-body);
     font-size: 0.95rem;
-    color: var(--text-light);
+    color: $gray-500;
     margin-bottom: 1.5rem;
   }
 }

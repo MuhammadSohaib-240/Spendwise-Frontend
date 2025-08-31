@@ -1,0 +1,144 @@
+// -----------------------------
+// SCSS Variables (for IntelliSense & build-time)
+// -----------------------------
+
+// Primary Palette
+$color-primary-50: #e8f5e9;
+$color-primary-100: #c8e6c9;
+$color-primary-200: #a5d6a7;
+$color-primary-300: #81c784;
+$color-primary-400: #66bb6a;
+$color-primary-500: #4caf50;
+$color-primary-600: #43a047;
+$color-primary-700: #388e3c;
+$color-primary-800: #2e7d32;
+$color-primary-900: #1b5e20;
+
+// Accent Palette
+$color-accent-50: #fff8e1;
+$color-accent-100: #ffecb3;
+$color-accent-200: #ffe082;
+$color-accent-300: #ffd54f;
+$color-accent-400: #ffca28;
+$color-accent-500: #ffc107;
+$color-accent-600: #ffb300;
+$color-accent-700: #ffa000;
+$color-accent-800: #ff8f00;
+$color-accent-900: #ff6f00;
+
+// Warn Palette
+$color-warn-50: #ffebee;
+$color-warn-100: #ffcdd2;
+$color-warn-200: #ef9a9a;
+$color-warn-300: #e57373;
+$color-warn-400: #ef5350;
+$color-warn-500: #f44336;
+$color-warn-600: #e53935;
+$color-warn-700: #d32f2f;
+$color-warn-800: #c62828;
+$color-warn-900: #b71c1c;
+
+// Gray Palette
+$gray-50:  #fafafa;
+$gray-100: #f5f5f5;
+$gray-200: #eeeeee;
+$gray-300: #e0e0e0;
+$gray-400: #bdbdbd;
+$gray-500: #9e9e9e;
+$gray-600: #757575;
+$gray-700: #616161;
+$gray-800: #424242;
+$gray-900: #212121;
+
+// Core Theme
+$primary-color: $color-primary-800;
+$secondary-color: $color-primary-600;
+$accent-color: $color-accent-600;
+$background-color: #f1f8e9;
+$surface: #ffffff;
+$text-color: #212121;
+$text-light: $gray-400;
+
+// Toast Semantic
+$success-color: $color-primary-800;
+$info-color: #0288d1;
+$warning-color: $color-accent-600;
+$error-color: $color-warn-700;
+
+// Fonts & Radius
+$font-body: 'Inter', sans-serif;
+$font-heading: 'Poppins', sans-serif;
+$btn-radius: 6px;
+
+// -----------------------------
+// CSS Variables (for runtime theming)
+// -----------------------------
+:root {
+  // Primary
+  --color-primary-50: #{$color-primary-50};
+  --color-primary-100: #{$color-primary-100};
+  --color-primary-200: #{$color-primary-200};
+  --color-primary-300: #{$color-primary-300};
+  --color-primary-400: #{$color-primary-400};
+  --color-primary-500: #{$color-primary-500};
+  --color-primary-600: #{$color-primary-600};
+  --color-primary-700: #{$color-primary-700};
+  --color-primary-800: #{$color-primary-800};
+  --color-primary-900: #{$color-primary-900};
+
+  // Accent
+  --color-accent-50: #{$color-accent-50};
+  --color-accent-100: #{$color-accent-100};
+  --color-accent-200: #{$color-accent-200};
+  --color-accent-300: #{$color-accent-300};
+  --color-accent-400: #{$color-accent-400};
+  --color-accent-500: #{$color-accent-500};
+  --color-accent-600: #{$color-accent-600};
+  --color-accent-700: #{$color-accent-700};
+  --color-accent-800: #{$color-accent-800};
+  --color-accent-900: #{$color-accent-900};
+
+  // Warn
+  --color-warn-50: #{$color-warn-50};
+  --color-warn-100: #{$color-warn-100};
+  --color-warn-200: #{$color-warn-200};
+  --color-warn-300: #{$color-warn-300};
+  --color-warn-400: #{$color-warn-400};
+  --color-warn-500: #{$color-warn-500};
+  --color-warn-600: #{$color-warn-600};
+  --color-warn-700: #{$color-warn-700};
+  --color-warn-800: #{$color-warn-800};
+  --color-warn-900: #{$color-warn-900};
+
+  // Gray
+  --gray-50: #{$gray-50};
+  --gray-100: #{$gray-100};
+  --gray-200: #{$gray-200};
+  --gray-300: #{$gray-300};
+  --gray-400: #{$gray-400};
+  --gray-500: #{$gray-500};
+  --gray-600: #{$gray-600};
+  --gray-700: #{$gray-700};
+  --gray-800: #{$gray-800};
+  --gray-900: #{$gray-900};
+
+  /* Core Theme Colors */
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --accent-color: #{$accent-color};
+  --background-color: #{$background-color};
+  --surface: #{$surface};
+  --text-color: #{$text-color};
+  --text-light: #{$text-light};
+
+  /* Toast Semantic Colors */
+  --success-color: #{$success-color};
+  --info-color: #{$info-color};
+  --warning-color: #{$warning-color};
+  --error-color: #{$error-color};
+
+  /* Fonts & Radius */
+  --font-body: #{$font-body};
+  --font-heading: #{$font-heading};
+  --btn-radius: #{$btn-radius};
+}
